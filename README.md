@@ -1,16 +1,4 @@
 
-# E02a-Control-Structures
-
-Let's start experimenting with some Python code! This is a set of exercises for MSCH-C220; they should give you the tools to help build your first game.
- 
-This exercise assumes that you have already installed Python, GitHub Desktop, and VS Code, and that you have already created a GitHub account. If that is not the case, please refer to previous exercises.
-
-This repository contains several files that you will need to alter to complete the assignment. Fork this repository (instructions below) and edit the files. Commit and push the changes back to GitHub and turn in the URL to your repository on Canvas.
-
-Comments in Python are marked by a # sign (for single-line comments) or three matching quotation marks (''' or """) if a comment requires more than one line. They should also appear in a different color in VS Code. The Python Interpreter ignores comments, so you can safely include any information you want there.
-
-*If you wish your exercise to be graded, please edit the LICENSE file (add the current year and your name).*
-
 Edit README.md to answer the following questions:
 
 - Open main01.py. Before running it, what do you expect this program to do?
@@ -49,54 +37,121 @@ Edit README.md to answer the following questions:
   
 Commit your changes and push them back to the repository.
  
+ main01.py
 
----
+ #Before running
+'''I think the program will say "Greetings!" followed by asking my
+what 'its' favorite color is. After I put that in the program will
+end as there is no more code.'''
 
-Instructions for forking this repository:
- 
-Log into your account on [github.com](https://github.com)
+#After running
+''' The program did exactly what I said it would do above. I know the
+program took my guess but I don't think it stored it as the 
+input has no variable connected to it, so it probably immediately
+deleted it afterwards.'''
 
-Go to the [exercise template page](https://github.com/BL-MSCH-C220-S20/E02a-Control-Structures) on GitHub
+main02.py
 
-There is a button in the top right corner of the page labeled "Fork". Press that now
+#Before running
+''' This program is different from the last in two ways. First off
+it actually stores my guess into a varible (color), but 
+then it also prints out what I guessed back out. I think the
+color = input() will actually store what I type in unlike the last one
+were it didn't have a variable to store it in.'''
 
-This will create an independent copy of this repository in your account that you can control and edit
+#After running
+'''The program did what I thought it was going to do, no suprises'''
 
-Go to your GitHub home page, and select the new E02a-Control-Structures repository
+main03.py
 
-On that page, you will see a green button labeled "Clone or download". Press that now. You will see a drop down box. Press the "Open in Desktop" button.
+#Before running
+'''This program differs from the last one by adding a correct answer
+to the question by using and if/else statement and it also gets rid of
+the random print(color) statement. Lines 9 - 12 are seeing if you
+guessed correctly. Lines 10 and 12 are indented because it shows what
+path the indented code is a part of.'''
 
-This should launch GitHub Desktop. It will ask you for a location (on your computer) where the repository may be cloned (downloaded). Choose a location that will be easy for you to find, and press the blue "Clone" button.
+#After running
+'''If you don't capatilize the word/color red the program will think
+your wrong because it does not know that red is ment to equal Red.'''
 
-Once GitHub Desktop has cloned (downloaded) the code, it will be responsible for keeping the code on your local computer synchronized with the repository in your GitHub account. Now, open Visual Studio Code, and choose File->Open. Find the folder of the cloned repository and select Open.
+main04.py
 
-In the left (File Explorer) panel, you should see a list of files that comprise this repository
+#Before running
+'''This program is diffent from the last because it allows the user
+to enter Red or red and still be correct instead of just Red. It is
+trying to solve the problem of people putting in the right color
+but still getting the wrong answer by making it so any logical/normal
+way of typing red will work.'''
 
-First, edit the file called LICENSE. Replace year and name with the current year and your name. Save this file
+#After running
+'''If you type red in a odd way like ReD or REd the program will think
+your wrong, because as I said, it is designed to make any NORMAL/LOGICAL
+way of typing red correct, not odd/dumb ways.'''
 
-Then open README.md. Feel free to remove any extraneous information, and then answer the questions posed in the file. You can add your answers after each question
+main05.py
 
-When the time comes for you to run any of the python files, you can do so by clicking the green arrow in the top right corner of the window or by right-clicking on the code and selecting "Run Python File in Terminal". The results will appear at the bottom. If you don't see "Run Python File in Terminal" in the contextual menu, that is because VS Code doesn't have the Python extension installed. You can do that here: [https://marketplace.visualstudio.com/items?itemName=ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+#Before running
+'''Line 9 will now turn any word, no matter how it is
+capatilized, to all just lower case letters and then check if it is red.
+This is trying to solve the problem of having a strict naming set so
+it is more easy to use, makes more sense, and stops people from being
+both right and wrong.'''
 
-When you are done editing the files, return to GitHub Desktop. In the left panel, you should see a list of the files that have changed
+#After running
+''' if you add spaces before, in, or after red the program will lable
+your answer as wrong because it is not designed to take those spaces
+into consideration.'''
 
-At the bottom of the leftmost area, you should see a text box labeled "Summary (required)". Add a message that describes what you have done; these messages are typically stated in the active-present tense. For example, "Updates the LICENSE, README.md, and completes the assignment." Push the blue "Commit to master" button
+main06.py
 
-In the top bar of the window, you should see a button that is labeled "Push origin", push that now
+#Before running
+'''This program is diffrent from the last because in line 9 it also
+adds the .strip() command to what you typed in. This should just get
+rid of any spaces so that if you type in red in any way with spaces
+(that are NOT inside the word red) or capatilized letters it will 
+still work.'''
 
-Check out your page on GitHub. You should see the changes you made reflected there, Repeat steps 10 through 16 as necessary
+#After running
+'''You can still break the logic by adding something else like
+red. instead of just red like normal or putting spaces inside 
+the word.'''
 
-When you are satisfied with your efforts, turn in a URL to your repository on Canvas
+main07.py
 
----
-If you try to push your changes, and you receive a permission error, it is likely that you are trying to edit the BL-MSCH-C220-S20 copy of the repository rather than your own. Make sure you don't skip the step of forking your own copy and cloning that.
+#Before running
+'''This program is diffrent from the last because it has made the color
+you type in fix its self before the if/else statement. It also added
+a third pathway, if you type a form of pink (without something added on)
+, you will get "Close!" instead of you just being flat out wrong. On
+line 12 it is giving you that third path way of pink.'''
 
----
+#After running
+'''No comment required.'''
 
-The grading criteria will be as follows:
- 
-[1 point] Repository contains a description of the project in README.md
+main08.py
 
-1 point will be awarded for answering the questions associated with each of the files
+#Before running
+'''Line 9 allows the user to keep guessing what the computers favorite
+color is over and over again instead of having to restart the program
+over and over again. Lines 10 - 17 are indentied because they will only
+be asked while you are wrong by NOT having typed in red.'''
 
-10 points total (+2 points extra credit)
+#After running
+''' If line 10 was moved up then if you immeditly guessed red no of the
+program inside the while statement would run because it only runs while
+you have not guessed red. Also if you guessed incorrectly then you would
+get stuck inside the while loop with the same response repeating because
+you wouldn't be allowed to input another guess.'''
+
+main09.py
+
+#Before running
+''' On line 13 a running total of how many guesses you've taken is set
+up. Count allows the program to see how many times the user has tried
+because everytime they try to guess count will go up by one. Line 22
+is empty but on line 21 the program is coming to an end by telling you
+how many times you guessed.'''
+
+#After running
+'''No comment required.'''
