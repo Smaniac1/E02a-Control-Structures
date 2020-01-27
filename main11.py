@@ -10,7 +10,8 @@ def choose_color(last_color):
         c = random.choice(colors)
     return c
 
-
+'''on lines 6-11 the program is setting up a mini program to choose a
+random color whenever choose_color(last_color) is called.'''
 
 
 print('Greetings!')

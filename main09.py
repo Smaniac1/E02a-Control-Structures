@@ -19,3 +19,13 @@ while (color != 'red'):
         print('Sorry, try again.')
 
 print('You guessed it in {} tries!'.format(count))
+
+#Before running
+''' On line 13 a running total of how many guesses you've taken is set
+up. Count allows the program to see how many times the user has tried
+because everytime they try to guess count will go up by one. Line 22
+is empty but on line 21 the program is coming to an end by telling you
+how many times you guessed.'''
+
+#After running
+'''No comment required.'''
